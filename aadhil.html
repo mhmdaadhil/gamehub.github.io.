@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaming Hub</title>
+    
+    <!-- Stylesheet Link -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1f24;
+            color: #fff;
+        }
+
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #0fbcf9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0fbcf9;
+        }
+
+        .hero {
+            background-image: url('https://wallpapers.com/images/hd/purple-gaming-nepi2tnxp6g0mvz9.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .features {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2rem;
+            color: #0fbcf9;
+            margin-bottom: 30px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature-item {
+            background-color: #292d36;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .feature-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .feature-item h3 {
+            margin: 20px 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #aaa;
+        }
+
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #0fbcf9;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Gaming Hub</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#games">Games</a>
+        <a href="#blog">Blog</a>
+        <a href="#community">Community</a>
+        <a href="#store">Store</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to the Ultimate Gaming Experience</h2>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Featured Games</h2>
+        <div class="feature-grid">
+            <!-- Feature 1 -->
+            <div class="feature-item">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220240/capsule_616x353.jpg?t=1682960396" alt="Game 1">
+                <h3>Far Cry3</h3>
+                <p>Explore the latest action-packed adventures in Far Cry3. Experience breathtaking gameplay and next-level graphics.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-item">
+                <img src="https://dl.dir.freefiremobile.com/common/web_event/hash/54f31449f5f91cf0cc223cc635cd5952jpg" alt="Game 2">
+                <h3>Free Fire</h3>
+                <p>Dive into the world of Free Fire, where strategy meets combat. Test your skills against the best players in the world.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-item">
+                <img src="https://play3r.net/wp-content/uploads/2015/07/outlast-cover-art.jpg" alt="Game 3">
+                <h3>Outlast</h3>
+                <p>Immerse yourself in the fantasy realm of Outlast, where magic, mystery, adventure and horror await at every turn.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+       
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Library - Gaming Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1f24;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            color: #0fbcf9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .game-library {
+            padding: 50px;
+        }
+
+        .game-library h2 {
+            color: #0fbcf9;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .game-item {
+            background-color: #292d36;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+
+        .game-item h3 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .game-item p {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming Hub - Games Library</h1>
+    </header>
+
+    <section class="game-library">
+        <h2>Explore Our Game Library</h2>
+        <div class="game-grid">
+            <!-- Game 1 -->
+            <div class="game-item">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/24960/header.jpg?t=1682701509" alt="Game 1">
+                <h3>Battlefield bd2</h3>
+                <p>Action / Adventure</p>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game-item">
+                <img src="https://i.redd.it/jin1fjc3rks71.jpg" alt="Game 2">
+                <h3>Baldurs gate 2</h3>
+                <p>Strategy / RPG</p>
+            </div>
+
+            <!-- Game 3 -->
+            <div class="game-item">
+                <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1551360/capsule_616x353.jpg?t=1725950938" alt="Game 3">
+                <h3>Forza horizon </h3>
+                <p>Simulation / Racing</p>
+            </div>
+
+            <!-- Game 4 -->
+            <div class="game-item">
+                <img src="https://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6" alt="Game 4">
+                <h3>counter strike GO</h3>
+                <p>Shooter / Multiplayer</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Gaming Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1f24;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            color: #0fbcf9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .blog {
+            padding: 50px;
+        }
+
+        .blog h2 {
+            color: #0fbcf9;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .post {
+            background-color: #292d36;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .post h3 {
+            color: #0fbcf9;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming Hub - Blog</h1>
+    </header>
+
+    
+
+    <section class="blog">
+        <h2>Latest Articles & Reviews</h2>
+
+        <!-- Post 1 -->
+        <div class="post">
+            <h3>Top 5 Action Games of 2024</h3>
+            <p>1.Devil May Cry 5
+Devil May Cry 5 marks the return of the same wise-cracking Dante that we’ve come to love over the years, and this time, he has two playable buddies tagging along for the ride. Nero, who we first saw in Devil May Cry 4, has now lost his devil arm, but thanks to his new friend Nico, he can swap out different augmentations using his weaponized prosthetic arm called a Devil Breaker.
+2.Bayonetta
+It took a while for Platinum Games’ first major success to arrive on PC, and even though parts two and three are Nintendo exclusives, the original Bayonetta is still one of the finest action games of all time. As the delicate balance between good and evil is in danger, you step into the stiletto-gun shoes of the Umbra Witch Bayonetta. And boy, she has creative ways of taking down the malicious angelic hosts.
+3.Devil May Cry HD Collection
+Really? Three more Devil May Cry games? You’re absolutely right. In this collection, you receive two of the best action games of all time, and a bad sequel that we don’t really talk about… The HD collection is the perfect way to introduce yourself to the action game genre. If you’re an action game fan who wants to experience the classics, you won’t need to break out a PlayStation 2 to relive the good old days. 4.Metal Gear Rising: Revengeance
+Another Platinum Games hit here, and while it’s one of the oldest games on the list, Metal Gear Rising: Revengeance is still a bonafide classic. You play as the heavily augmented half-cyborg ninja Raiden, who is sent to confront a private military company intending to destabilize the fragile peace and plunge the world into another war on terror. 5.Nier Automata
+As one of the best PC games in 2017, it’s unsurprising that the chaotic Nier: Automata appears on this list. Platinum Games has a long history of making the best action games out there, and this collaboration with Square Enix is one of its more experimental efforts. Our Nier Automata review explains it as “an intelligent, bombastic game that’s in turns frenetic and tender, while deviating from cliche at every opportunity.”</p>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+            <h3>How to Build a Gaming PC on a Budget</h3>
+            <p>Yes, you can build a gaming PC within a Rs 30,000 budget. Look for components like an Intel Core i3 or AMD Ryzen 3 processor, 8GB of RAM, and a dedicated graphics card such as NVIDIA GTX or AMD Radeon RX. Opting for a solid-state drive (SSD) will also improve boot and game load times.</p>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post">
+            <h3>Review: Game Title X</h3>
+            <p>A deep dive into Game Title X, analyzing its gameplay, story, and performance...</p>
+        </div>
+    </section>
+
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Gaming Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1f24;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            color: #0fbcf9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .community {
+            padding: 50px;
+        }
+
+        .community h2 {
+            color: #0fbcf9;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .user-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .user-profile {
+            background-color: #292d36;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .user-profile h3 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .user-profile p {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming Hub - Community</h1>
+    </header>
+
+    
+
+    <section class="community">
+        <h2>Meet the Players</h2>
+        <div class="user-grid">
+            <!-- User 1 -->
+            <div class="user-profile">
+                <h3>PlayerOne</h3>
+                <p>Achievements: 1200 XP</p
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gaming Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1f24;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1, footer p {
+            color: #0fbcf9;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .contact {
+            padding: 50px;
+        }
+
+        .contact h2 {
+            color: #0fbcf9;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #292d36;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #1b1f24;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #0fbcf9;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #0da8d8;
+        }
+
+        .contact-details {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gaming Hub - Contact Us</h1>
+    </header>
+
+    
+    <section class="contact">
+        <h2>We'd Love to Hear From You</h2>
+
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+
+        <div class="contact-details">
+            <p>Email: mhmdaadhil5@gmail.com</p>
+            <p>Phone: +94 75 070 4125</p>
+            <p>Address: Gampaha, Sri lanka</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gaming Hub | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+
+
